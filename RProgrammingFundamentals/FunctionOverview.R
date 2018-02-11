@@ -13,6 +13,6 @@ student.physics.total.marks
 
 student.chemistry.quiz.marks <- c(60L, 70L, 85L, 70L)
 student.chemistry.viva.marks <- c(8L, 4L, 7L, 9L)
-student.chemistry.total.marks <- GetTotalMarks(student.chemistry.quiz.marks, student.chemistry.viva.marks)
+student.chemistry.total.marks <- GetTotalMarks(viva.marks = student.chemistry.viva.marks, quiz.marks = student.chemistry.quiz.marks)
 
 student.chemistry.total.marks
