@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "RProgrammingFundamentals", "RProgrammingFundamentals\RProgrammingFundamentals.rxproj", "{53A60333-97EE-422B-B7E6-0D27F262422C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53A60333-97EE-422B-B7E6-0D27F262422C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A60333-97EE-422B-B7E6-0D27F262422C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A60333-97EE-422B-B7E6-0D27F262422C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A60333-97EE-422B-B7E6-0D27F262422C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
