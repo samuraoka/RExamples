@@ -35,7 +35,9 @@ student.chemistry.total.marks <- GetTotalMarks(viva.marks = student.chemistry.vi
 
 student.chemistry.total.marks
 
+#
 # Lazy Evaluation
+#
 GetTotalMarks <- function(quiz.marks, viva.marks, extra.marks = average.viva.marks) {
     average.viva.marks <- mean(viva.marks)
     total.marks <- quiz.marks + viva.marks + extra.marks
@@ -49,3 +51,13 @@ GetTotalMarks(quiz.marks <- c(70L, 75L, 80L, 85L),
               viva.marks <- c(7L, 5L, 8L, 6L),
               c(1L, 1L, 1L, 1L))
 
+#
+# Multiple Return Values
+#
+GetMarksSummary <- function(quiz.marks, viva.marks) {
+    total.marks <- quiz.marks + viva.marks
+    avg.marks <- mean(total.marks)
+    return(list(total = total.marks, average = avg.marks))
+}
+
+GetMarksSummary(quiz.marks = c(70L, 75L, 80L, 85L), viva.marks = c(7L, 5L, 8L, 6L))
