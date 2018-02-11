@@ -1,5 +1,5 @@
-GetTotalMarks <- function(quiz.marks, viva.marks) {
-    total.marks <- quiz.marks + viva.marks
+GetTotalMarks <- function(quiz.marks, viva.marks, assignment.marks = 5L) {
+    total.marks <- quiz.marks + viva.marks + assignment.marks
     total.marks
 }
 
@@ -13,6 +13,8 @@ student.physics.total.marks
 
 student.chemistry.quiz.marks <- c(60L, 70L, 85L, 70L)
 student.chemistry.viva.marks <- c(8L, 4L, 7L, 9L)
-student.chemistry.total.marks <- GetTotalMarks(viva.marks = student.chemistry.viva.marks, quiz.marks = student.chemistry.quiz.marks)
+student.chemistry.total.marks <- GetTotalMarks(viva.marks = student.chemistry.viva.marks,
+                                               quiz.marks = student.chemistry.quiz.marks,
+                                               c(2L, 1L, 3L, 4L))
 
 student.chemistry.total.marks
