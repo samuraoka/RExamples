@@ -17,3 +17,13 @@ for (row in 1:nrow(student.marks)) {
 }
 result
 
+apply(student.marks, MARGIN = 1, sum);
+apply(student.marks, MARGIN = 1, max);
+apply(student.marks, MARGIN = 1, which.max)
+colnames(student.marks)[apply(student.marks, MARGIN = 1, which.max)]
+
+apply(student.marks, MARGIN = 2, mean)
+apply(student.marks, MARGIN = 2, max)
+rownames(student.marks)[apply(student.marks, MARGIN = 2, which.max)]
+
+apply(student.marks, MARGIN = c(1, 2), function(x) { x + 2 })
